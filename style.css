@@ -1,0 +1,392 @@
+/*шрифты*/
+@font-face {
+  font-family: Fedra;
+  src: url(./fedra-sans/Fedra\ Sans\ Book.ttf);
+}
+
+@font-face {
+  font-family: Centro;
+  src: url(./fonts/PFCentroSansPro-Thin.ttf);
+}
+
+@font-face {
+  font-family: Bree;
+  src: url(./fonts/BreeCYR-ThinOblique.ttf);
+}
+
+@font-face {
+  font-family: Proxima;
+  src: url(./fonts/ProximaNova-ThinIt.ttf);
+}
+
+@font-face {
+  font-family: Museo;
+  src: url(./fonts/MuseoSlab-300.ttf);
+}
+
+@font-face {
+  font-family: Kava;
+  src: url(./fonts/FFKavaPro-Bold.otf);
+}
+
+@font-face {
+  font-family: Avenir;
+  src: url(./fonts/Avenir-BlackOblique.ttf);
+}
+
+@font-face {
+  font-family: Helvetica;
+  src: url(./fonts/Helvetica-Oblique.ttf);
+}
+
+@font-face {
+  font-family: Edge;
+  src: url(./fonts/EdgeDisplay-Regular.otf);
+}
+
+
+
+
+
+
+/*стилизация тела сайта*/
+body {
+  text-align: center;
+}
+
+
+
+
+#language-switcher {
+  /* Стилизация кнопки */
+  display: flex;
+  align-items: center;
+
+
+  img {
+    margin: 5px 10px
+  };
+}
+
+.header {
+  background-color:#D8D5C7;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-item-nav {
+  display: flex;
+  align-items: center;
+  font-family: Fedra;
+
+}
+
+.header-item-nav li {
+  list-style: none;
+}
+
+.header-item-nav li a{
+  color: black;
+  text-decoration: none;
+  margin: 0 10px;
+
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  font: Bree;
+
+}
+
+.btn-nav {
+  border: none;
+  background-color: #D8D5C7;
+  font-size: 16px;
+  padding: 10px 5px;
+  border-radius: 10px;
+}
+
+.btn-nav:active {
+  background-color: white;
+}
+.btn-nav:hover {
+  background-color: white;
+}
+
+
+
+
+#language-switcher {
+  transition: background-color 0.3s ease;
+  background-color: #FDF7EB;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+#language-switcher img {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+  vertical-align: middle;
+}
+
+#language-switcher select {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease-in-out;
+}
+
+#language-switcher[aria-pressed="true"] select {
+  opacity: 1;
+  pointer-events: auto;
+  top: 100%;
+}
+
+#language-switcher[aria-pressed="true"] {
+  transform: none;
+}
+
+
+
+/* Стили для логотипа */
+.logo {
+  width: 100px;
+  height: 100%;
+}
+
+
+/* Стили для иконок */
+.icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+  transition: transform 0.3s ease;
+}
+
+.icon:hover {
+  transform: rotate(360deg);
+}
+
+.navigation-menu {
+  list-style-type: none;
+  display: flex;
+}
+
+.navigation-menu li {
+  margin-right: 10px;
+  font-family: Fedra;
+}
+
+ul {
+  font-family: Fedra;
+  font-style: normal;
+  font-weight: normal;
+  font-stretch: normal;
+}
+
+.section {
+  text-align: center;
+}
+
+h1 {
+  font-size: 24px;
+  font-family: Centro;
+}
+
+h2 {
+  font-size: 16px;
+  font-family: Bree;
+}
+
+.image {
+  width: 740px;
+  height: 740px;
+}
+
+
+
+
+
+
+
+
+/*секция Новая коллекция*/
+
+
+
+.category {
+  margin: 0 20px;
+  background-color: #D8D5C7;
+  border-radius: 10px;
+  padding: 5px;
+  position: relative;
+  bottom: 0;
+  transition: bottom 0.3s ease ;
+}
+
+.category:hover {
+  bottom: 10px;
+}
+
+.category p {
+  text-align: center;
+  font-size: 24px;
+  margin: 5px 0;
+  
+}
+.caregory-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 0 auto;
+  height: 100%;
+  max-width: 1500px;
+}
+
+.new-season-container {
+ 
+  height: 600px;
+  width: 100%;
+  padding-top: 20px;
+ 
+}
+
+.new-season-container-title {
+  font-family: Avenir;
+  text-align: center;
+  font-size: 36px;
+  margin: 0;
+}
+
+.category img{
+  width: 200px;
+  height: 250px;
+  border-radius: 10px;
+
+}
+
+
+.info-cards-blu {
+  font-family: Edge;
+}
+
+.info-cards-red {
+  font-family: Fedra;
+}
+
+.info-cards-green {
+  font-family: Centro;
+}
+
+.info-cards-pink {
+  font-family: Bree;
+}
+
+.collection2 {
+  font-family: Proxima;
+}
+
+.collectionh2 {
+  font-family: Museo;
+}
+
+
+
+@keyframes gradient {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}
+.catalog-link {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  font-family: Kava;
+}
+
+.catalog-link {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.catalog-link:hover {
+  background-color: #555;
+}
+.background {
+  margin: 0;
+
+  background: linear-gradient(45deg, #d6bba5, #87555f);
+  background-size: 400% 400%;
+  animation: gradient 10s ease infinite;
+}
+
+
+/* Стили для подвала */
+.footer {
+  padding: 20px;
+  margin: 0;
+
+  background: linear-gradient(45deg, #fffbd5, #333);
+  background-size: 400% 400%;
+  animation: gradient 10s ease infinite;
+  font-size: 16px;
+}
+
+/* Стили для копирайта */
+.copyright {
+  font-size: 14px;
+  text-align: center;
+  font-family: Helvetica;
+}
+
+/* Стили для иконок социальных сетей */
+.social-icons {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.social-icons a {
+  margin: 0 10px;
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Стили для ссылки на политику конфиденциальности */
+.privacy-policy {
+  display: block;
+  text-align: center;
+  margin-top: 10px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.geol {
+  height: 250px;
+  transition: transform 0.3s ease;
+  margin: 0 auto;
+  display: table;
+}
+
+.geol:hover {
+  transform: scale(1.2);
+}

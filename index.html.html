@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Ягодки - интернет магазин</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <div class="background">
+
+  <header class="header">
+    <img class="logo" src="./media/logo.png" alt="Ягодки">
+    <nav class="nav">
+      <!-- Здесь размещается навигационное меню -->
+      <ul class="header-item-nav">
+
+        <li><button class="btn-nav"><a href="#">Женщинам</a></button></li>
+        <li><button class="btn-nav"><a href="#">Мужчинам</a></button></li>
+        <li><button class="btn-nav"><a href="#">Детям</a></button></li>
+        <li><button class="btn-nav"><a href="#">Акции</a></button></li>
+        <li><button class="btn-nav"><a href="#">Контакты</a></button></li>
+      </ul>
+      <div class="icon-nav">
+        <img class="icon" src="./media/search.svg" alt="Поиск">
+        <img class="icon" src="./media/lk.svg" alt="Личный кабинет">
+        <img class="icon" src="./media/basket.svg" alt="Корзина">
+      </div>
+    </nav>
+    <button id="language-switcher" aria-pressed="true">
+      <img src="./media/language.svg" alt="anguage">
+      <select>
+        <option value="ru">RU</option>
+        <option value="en">EN</option>
+      </select>
+    </button>
+
+    <script>
+      const languageSwitcher = document.getElementById('language-switcher');
+      const select = languageSwitcher.querySelector('select');
+    
+      languageSwitcher.addEventListener('click', () => {
+        languageSwitcher.setAttribute('aria-pressed', languageSwitcher.getAttribute('aria-pressed') === 'true' ? 'false' : 'true');
+      });
+    
+      select.addEventListener('change', () => {
+        // Handle language change logic here
+        console.log('Language changed:', select.value);
+    
+        setTimeout(() => {
+          languageSwitcher.setAttribute('aria-pressed', 'false');
+        }, 500);
+      });
+    </script>
+  </header>
+
+
+  <!--Главный экран-->
+
+  <section>
+
+    <h1>Ягодки</h1>
+    <h2>Онлайн-магазин одежды от российского производителя</h2>
+
+    <img class="image" src="./media/pict1.png" alt="Изображение 1">
+    <img class="image" src="./media/pict2.png" alt="Изображение 2">
+
+
+  </section>
+
+
+
+
+
+  <!--Новая коллекция-->
+
+  <section class="section2">
+    <h1 class="collection">Новая коллекция</h1>
+    <h2 class="collectionh2">Стильная, футуристичная, необычная новая коллекция кашемировых костюмов. Все как вы и мы любим.</h2>
+    <a href="catalog.html" class="catalog-link">Перейти в каталог</a>
+  </section>
+
+
+
+
+
+  <!--Новинки сезона-->
+
+  <section>
+    <div class="new-season-container">
+      <h1 class="new-season-container-title">Новинки сезона осень-зима 2024</h1>
+      <div class="caregory-container">
+        <div class="category">
+          <img src="./media/blue.png" alt="Новинка 1">
+          <div class="temp-img-new"></div>
+          <div class="info-cards-blu">
+            <p>Блю</p>
+          </div>
+        </div>
+
+        <div class="category">
+          <img src="./media/red.png" alt="Новинка 2">
+          <div class="temp-img-new"></div>
+          <div class="info-cards-red">
+            <p>Ред</p>
+          </div>
+        </div>
+
+        <div class="category">
+          <img src="./media/green.png" alt="Новинка 3"> 
+          <div class="temp-img-new"></div>
+          <div class="info-cards-green">
+            <p>Грин</p>
+          </div>
+
+        </div>
+
+        <div class="category">
+          <img src="./media/pink.png" alt="Новинка 4">
+          <div class="temp-img-new"></div>
+          <div class="info-cards-pink">
+            <p>Пинк</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+
+
+
+  <!--Подвал-->
+
+  <section>
+    <footer class="footer">
+      <div class="copyright">
+        &copy; 2024 Все права защищены
+      </div>
+
+      <div class="social-icons">
+        <img class="icon" src="./media/facebook.svg" alt="facebook">
+        <img class="icon" src="./media/vk.svg" alt="Vk">
+        <img class="icon" src="./media/instagram.svg" alt="instagram">
+      </div>
+
+      <a href="privacy.html" class="privacy-policy">Политика конфиденциальности</a>
+
+      <img class="geol" src="./media/geolog.png" alt="Наша геолокация">
+    </footer>
+  </section>
+</div>
+</body>
+
+</html>
